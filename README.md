@@ -1,7 +1,13 @@
 # Amazon Vine Analysis
 
 ##  Purpose
-The purpose of this analysis is to determine if there is a difference in the 5 star rating of reviews for paid (vine) vs non-piad (non-vine) reviews.
+Stakeholders in a fictional company are seeking to determine if ratings paid for using the Amazon Vine program are higher that those provided naturally from product purchasers. The purpose of this analysis is to sepcfically identify if there is a difference in the 5 star rating of reviews for paid (vine) vs non-piad (non-vine) reviews.
+
+## Tools
+Tools used for this analysis include Python, Pandas, Pyspark, AWS RDS connected to postgreSQL, and PgAdmin.
+
+## Process
+In this project, data was collected from AWS's repository of Vine Reviews. Vine is an Amazon program in which companies can pay to have reviews of their product created after participants interact with the goods being sold. The dataset was imported into spark (via pyspark) and was processed through ETL. It was then uploaded to an AWS Relative Database Service bucket that was connected to postgres and pgAdmin. Finally queries of the database were done with postgreSQL .
 
 ## Results
 1. We can see based on calculations made from the gathered data that we have a total of 904,765 reviews (Fig.1). Of those reviews, 572,916 were 5-star (Fig.2). That gives an overall rate of 63.32% of reviews being 5-stars (Fig.3). 
